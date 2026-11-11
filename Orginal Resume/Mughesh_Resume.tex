@@ -1,0 +1,203 @@
+%-------------------------
+% ATS-Friendly Resume in LaTeX
+% Author: Mughesh Kumar Natarajan Rani
+% License: MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+% ── Core packages ──
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}                       % Clean, crisp Latin Modern fonts
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[empty]{fullpage}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+% ── Page layout ──
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.27cm, top=0.5cm, right=1.27cm, bottom=0.5cm}
+\setlength{\footskip}{4pt}
+
+% ── Link styling ──
+\hypersetup{colorlinks=false}
+\urlstyle{same}
+
+% ── Global text settings ──
+\setlength{\tabcolsep}{0in}
+
+% ── Section headings ──
+\titleformat{\section}{
+  \vspace{-5pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% ── Custom commands ──
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small #3} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.5em, rightmargin=0.2em, itemsep=-1pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% ── Bullet character ──
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%-------------------------------------------
+%             CV STARTS HERE
+%-------------------------------------------
+
+\newcommand{\name}{Mughesh Kumar N R}
+\newcommand{\phone}{+1-(984)-742-8479}
+\newcommand{\emaila}{mugheshkumar9@gmail.com}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\LARGE \textbf{\name}} \\[3pt]
+  \small
+  Charlottesville, VA $|$
+  \href{tel:+19847428479}{\phone} $|$
+  \href{mailto:\emaila}{\emaila} $|$
+  \href{https://www.linkedin.com/in/mughesh/}{linkedin.com/in/mughesh} $|$
+  \href{https://github.com/mughesh03}{github.com/mughesh03} $|$
+  \href{https://mughesh.vercel.app/}{mughesh.vercel.app}
+\end{center}
+\vspace{-25pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\href{https://www.virginia.edu/}{University of Virginia}}{Charlottesville, VA}
+    {Master of Science in Computer Science}{Aug 2025 -- Dec 2026}
+    \resumeItemListStart
+      \resumeItem{Completed graduate coursework in Autonomous Mobile Robots, Network Engineering, Machine Learning, and CPS.}
+      \resumeItem{Served as a Graduate Teaching and Research Assistant, guiding student projects and supporting professor's research.}
+      \resumeItem{Judged student hackathons and led campus ethics initiatives, organizing campus events to promote ethical technology.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://www.berkeley.edu/}{University of California, Berkeley}}{Berkeley, CA}
+    {Startup Semester Program}{Jan 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Studied Designing Startups to Transform Society, Future of Technology, Product Management, and AI in Business.}
+      \resumeItem{Awarded \textbf{\$10,950} UC Berkeley Chancellor’s Scholarship for Startup Semester, Selected from 600+ applicants.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://www.srmist.edu.in/}{SRM Institute of Science and Technology}}{Chennai, India}
+    {Bachelor of Technology in Computer Science and Engineering (AI \& ML)}{Aug 2021 -- Dec 2024}
+    \resumeItemListStart
+      \resumeItem{Awarded University Gold Medal for Leadership and Academic Excellence, and also served as Student Body President.}
+      \resumeItem{Won two Sustainable Development Goals hackathons and \$1,500 in awards, solving real-world problems in 48-hours.}
+      \resumeItem{Published two IEEE research papers and received an Indian-granted patent in artificial intelligence and innovation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of Virginia Information Technology Services (ITS)}{Charlottesville, VA}
+    {Wireless Systems Deployment Summer Intern}{June 2026 -- Aug 2026}
+    \resumeItemListStart
+      \resumeItem{Supported a \textbf{\$6M+ Wireless Network Refresh} project with \textbf{HPE} to modernize university wireless infrastructure.}
+      \resumeItem{Conducted campus-wide wireless surveys and documented the geographic locations of \textbf{6,656} wireless access points.}
+      \resumeItem{Utilized \textbf{ArcGIS} to inventory, map, and validate wireless assets, improving deployment planning and asset visibility.}
+      \resumeItem{Developed floorplans, maps, and deployment data within the \textbf{Juniper Mist} wireless network management platform.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {IBM}{India}
+    {Artificial Intelligence Intern}{June 2023 -- July 2023}
+    \resumeItemListStart
+      \resumeItem{Built a Mental Fitness Tracker using \textbf{Pandas} and \textbf{NumPy}, performing analytics on merged global health datasets.}
+      \resumeItem{Applied statistics and mathematics for predictive modeling of mental-health DALYs from disorder prevalence features.}
+      \resumeItem{Implemented Linear Regression and Random Forest with scikit-learn. Evaluated models using MSE, RMSE, and R\textsuperscript{2}.}
+      \resumeItem{Improved prediction accuracy to 99.4\% R\textsuperscript{2} with Random Forest model, outperforming Linear Regression (76.6\% R\textsuperscript{2}).}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\href{https://facemark-theta.vercel.app/}{FaceMark AI --- Smart Face Recognition Attendance System} \href{https://facemark-theta.vercel.app/}{[\textcolor{blue}{Live Demo}]}}{}
+    {\textbf{Tech Stack:} HTML, CSS, JavaScript, face-api.js, MTCNN, WebRTC, Canvas API, Web Speech API, Vercel.}{}
+    \resumeItemListStart
+      \resumeItem{Built a browser-based face recognition attendance system using HTML, CSS, and JavaScript with face-api.js and the MTCNN model, detecting faces in real time and generating 128-D face descriptors for accurate identity matching.}
+      \resumeItem{Implemented real-time webcam capture with WebRTC (getUserMedia) and Canvas API overlays, along with a guided 30-sample training flow, a 30-minute cooldown to block duplicate entries, and automated Web Speech voice greetings.}
+      \resumeItem{Designed a privacy-first Web-App with localStorage persistence, date filters, data visualization and CSV export.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Intelligent Computer Vision System for Pest Detection in Agri Farms}{}
+    {\textbf{Tech Stack:} Python, TensorFlow, OpenCV, NoSQL, Microservices.}{}
+    \resumeItemListStart
+      \resumeItem{Designed and deployed a Computer Vision system using TensorFlow and OpenCV to detect and classify pests on crops, enabling precision agriculture and promoting sustainable farming practices across multiple regional agri farms.}
+      \resumeItem{Detected 8+ pest species with 96\% accuracy on real-time inference, training deep learning models on 12,000+ annotated crop images collected from large-scale field trials across diverse environmental and lighting conditions.}
+      \resumeItem{Integrated Python-based microservices architecture with NoSQL databases for scalable data ingestion, storage, and real-time prediction serving, reducing end-to-end inference latency and enabling seamless deployment on Jetson Nano.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.1in, label={}]
+  \small{\item{
+    \textbf{Areas of Interest}{: AI/ML, NLP, LLMs, AI Agents, Software Engineering, Data Science, System Design, Cloud Computing, Distributed Systems, Cloud Infrastructure, Front-End, Backend.} \\
+    \textbf{Languages}{: Python, C/C++, HTML/CSS, JavaScript, SQL.} \\
+    \textbf{Frameworks}{: TensorFlow, Keras, PyTorch, Scikit-learn, Flask, React, Node.js, Hugging Face, FastAPI, Next.js.} \\
+    \textbf{Libraries \& Data}{: NumPy, Pandas, OpenCV, Matplotlib, Seaborn, Plotly, SciPy, Jupyter, MySQL, PostgreSQL, MongoDB, Redis.} \\
+    \textbf{Tools \& Cloud}{: Git, Docker, Kubernetes, Linux, CI/CD, REST APIs, Agile, AWS (EC2, S3, Lambda), GCP, Azure, Prometheus, Grafana.} \\
+    \textbf{LLM coding assistants}{: GitHub Copilot, Cursor, Claude Code, Gemini, Antigravity.} \\
+  }}
+\end{itemize}
+\vspace{-25pt}
+
+%-----------PUBLICATIONS & PATENTS-----------------
+\section{Publications \& Patents}
+\resumeItemListStart
+  \resumeItem{Optimizing Energy Efficiency in Smart Street Lighting Systems with LoRa WAN Technology -- IEEE. \hfill \href{https://ieeexplore.ieee.org/document/10527564}{\textcolor{blue}{Publication}}}
+  \resumeItem{Comparative Analysis of Handwritten Digit Recognition using MLP, CNN, LeNet-5 Models -- IEEE. \hfill \href{https://ieeexplore.ieee.org/document/10939547}{\textcolor{blue}{Publication}}}
+  \resumeItem{Internet of Things (IoT) Based Attendance System for Roadside Construction Sites -- IP India Granted. \hfill \href{https://drive.google.com/file/d/1zTYg7hnRU_YZuY8qC2AFABGL-V3i2Cie/view?usp=sharing}{\textcolor{blue}{Patent}}}
+\resumeItemListEnd
+
+\end{document}
+

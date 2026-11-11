@@ -1,0 +1,16 @@
+# 1. Ignore Supporting and temporary build files
+Supporting/
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+
+# 2. In Generated Resume, only track and push PDF files (do not track .tex or other files)
+[Nn]ew [Gg]enerated [Rr]esume/*
+![Nn]ew [Gg]enerated [Rr]esume/*.pdf
+[Gg]enerated [Rr]esume/*
+![Gg]enerated [Rr]esume/*.pdf
+
