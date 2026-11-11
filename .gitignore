@@ -8,9 +8,6 @@ Supporting/
 *.fdb_latexmk
 *.toc
 
-# 2. In Generated Resume, only track and push PDF files (do not track .tex or other files)
-[Nn]ew [Gg]enerated [Rr]esume/*
-![Nn]ew [Gg]enerated [Rr]esume/*.pdf
-[Gg]enerated [Rr]esume/*
-![Gg]enerated [Rr]esume/*.pdf
-
+# 2. In Generated Resume, push only PDF folder, never the Latex folder
+[Nn]ew [Gg]enerated [Rr]esume/[Ll]atex/
+[Gg]enerated [Rr]esume/[Ll]atex/
