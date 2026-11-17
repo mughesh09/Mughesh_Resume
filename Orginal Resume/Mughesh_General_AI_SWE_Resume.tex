@@ -1,0 +1,222 @@
+%-------------------------
+% General Resume — AI Engineer / Software Engineer
+% Author : Mughesh Kumar Natarajan Rani
+% Projects: AI Multi-Agent Collaboration Platform + FaceMark AI
+% Note    : ATS-optimised; fits one A4 page at 11pt.
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+% ── Core packages ──
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+% ── Page layout ──
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.27cm, top=0.5cm, right=1.27cm, bottom=0.5cm}
+\setlength{\footskip}{4pt}
+
+% ── Link styling + PDF metadata (helps ATS index the document) ──
+\hypersetup{
+  colorlinks=false,
+  pdfauthor={Mughesh Kumar N R},
+  pdftitle={Mughesh Kumar N R - AI Engineer / Software Engineer Resume},
+  pdfsubject={Resume - AI Engineer, Software Engineer, Machine Learning Engineer},
+  pdfkeywords={
+    AI Engineer, Software Engineer, Machine Learning Engineer, ML Engineer,
+    Generative AI Engineer, LLM Engineer, AI Agent Engineer,
+    Multi-Agent Systems Engineer, Applied AI Engineer,
+    AI Platform Engineer, AI Infrastructure Engineer,
+    Full Stack AI Engineer, AI Applications Engineer,
+    NLP Engineer, Deep Learning Engineer, Computer Vision Engineer,
+    Backend Engineer, Full Stack Engineer, Python Developer,
+    Platform Engineer, Cloud Engineer, Research Engineer,
+    Data Scientist, Founding Engineer,
+    Python, FastAPI, LLM, RAG, MCP, Multi-Agent Systems,
+    Machine Learning, NLP, TensorFlow, PyTorch,
+    OpenAI, Anthropic, Gemini, WebSockets, PostgreSQL, MongoDB,
+    Docker, Kubernetes, AWS, GCP, Azure
+  }
+}
+\urlstyle{same}
+
+% ── Header accent colour ──
+\definecolor{headerblue}{RGB}{0, 70, 160}
+
+% ── Global text settings ──
+\setlength{\tabcolsep}{0in}
+\setlength{\emergencystretch}{15pt}
+
+% ── Section headings ──
+\titleformat{\section}{
+  \vspace{-5pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% ── Custom commands ──
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small #3} & \small #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.5em, rightmargin=0.2em, itemsep=-1pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% ── Bullet character (plain text mode — ATS safe) ──
+\renewcommand{\labelitemi}{\textbullet}
+
+%-------------------------------------------
+%             CV STARTS HERE
+%-------------------------------------------
+
+\newcommand{\name}{Mughesh Kumar N R}
+\newcommand{\phone}{+1-(984)-742-8479}
+\newcommand{\emaila}{mugheshkumar9@gmail.com}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\LARGE \textbf{\name}} \\[4pt]
+  {\small \color{headerblue}
+    Charlottesville, VA \hspace{4pt}\textbar\hspace{4pt}
+    \href{tel:+19847428479}{\phone} \hspace{4pt}\textbar\hspace{4pt}
+    \href{mailto:\emaila}{\emaila}} \\[2pt]
+  {\small \color{headerblue}
+    \href{https://www.linkedin.com/in/mughesh/}{linkedin.com/in/mughesh} \hspace{4pt}\textbar\hspace{4pt}
+    \href{https://github.com/mughesh03}{github.com/mughesh03} \hspace{4pt}\textbar\hspace{4pt}
+    \href{https://mughesh.vercel.app/}{mughesh.vercel.app}}
+\end{center}
+\vspace{-22pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {\href{https://www.virginia.edu/}{University of Virginia}}{Charlottesville, VA}
+    {Master of Science in Computer Science}{Aug 2025 -- Dec 2026}
+    \resumeItemListStart
+      \resumeItem{Completed graduate coursework in Autonomous Mobile Robots, Network Engineering, Machine Learning, and CPS.}
+      \resumeItem{Served as Graduate Teaching \& Research Assistant, guiding student projects and supporting professor's research.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://www.berkeley.edu/}{University of California, Berkeley}}{Berkeley, CA}
+    {Startup Semester Program}{Jan 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Studied Designing Startups to Transform Society, Future of Technology, Product Management, and AI in Business.}
+      \resumeItem{Awarded \textbf{\$10,950} UC Berkeley Chancellor's Scholarship for Startup Semester, selected from 600+ applicants.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {\href{https://www.srmist.edu.in/}{SRM Institute of Science and Technology}}{Chennai, India}
+    {Bachelor of Technology in Computer Science and Engineering (AI \& ML)}{Aug 2021 -- Dec 2024}
+    \resumeItemListStart
+      \resumeItem{Awarded University Gold Medal for Leadership and Academic Excellence, and also served as Student Body President.}
+      \resumeItem{Won two Sustainable Development Goals hackathons and \$1,500 in awards, solving real-world problems in 48-hours.}
+      \resumeItem{Published two IEEE research papers and received an Indian-granted patent in artificial intelligence and innovation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of Virginia Information Technology Services (ITS)}{Charlottesville, VA}
+    {Wireless Systems Deployment Summer Intern}{June 2026 -- Aug 2026}
+    \resumeItemListStart
+      \resumeItem{Supported a \textbf{\$6M+ Wireless Network Refresh} project with \textbf{HPE} to modernize university wireless infrastructure.}
+      \resumeItem{Conducted campus-wide wireless surveys and documented the geographic locations of \textbf{6,656} wireless access points.}
+      \resumeItem{Utilized \textbf{ArcGIS} to inventory, map, and validate wireless assets, improving deployment planning and asset visibility.}
+      \resumeItem{Developed floorplans, maps, and deployment data within the \textbf{Juniper Mist} wireless network management platform.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {IBM}{India}
+    {Artificial Intelligence Intern}{June 2023 -- July 2023}
+    \resumeItemListStart
+      \resumeItem{Built a Mental Fitness Tracker using \textbf{Pandas} and \textbf{NumPy}, performing analytics on merged global health datasets.}
+      \resumeItem{Applied statistics and mathematics for predictive modeling of mental-health DALYs from disorder prevalence features.}
+      \resumeItem{Implemented Linear Regression and Random Forest with scikit-learn. Evaluated models using MSE, RMSE, and R\textsuperscript{2}.}
+      \resumeItem{Improved prediction accuracy to \textbf{99.4\% R\textsuperscript{2}} with Random Forest, outperforming Linear Regression (76.6\% R\textsuperscript{2}).}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  % ── PROJECT 1: AI Multi-Agent Collaboration Platform ──────────────────────
+  \resumeSubheading
+    {\href{https://ai-teams-platform.onrender.com/}{AI Multi-Agent Collaboration Platform} \href{https://ai-teams-platform.onrender.com/}{[\textcolor{blue}{Live Demo}]}}{}
+    {\textbf{Tech Stack:} Python, FastAPI, WebSockets, OpenAI, Anthropic, Gemini, PostgreSQL, MongoDB, Supabase, RAG.}{}
+    \resumeItemListStart
+      \resumeItem{Built a platform where AI agents, each using a unique LLM (OpenAI, Anthropic, or Gemini), hold structured multi-round discussions to collectively solve complex problems that no single model handles reliably on its own.}
+      \resumeItem{Designed Human-in-the-Loop via WebSockets, letting users pause any round, inject messages into the ongoing agent conversation, and steer the outcome before exporting the full dialogue as JSON or CSV.}
+      \resumeItem{Configured discussion modes (pooled, sequential, reciprocal, team-wide) for per-agent context routing, integrated RAG for grounded reasoning and MCP for external tool access, and deployed on Render with Supabase, MongoDB, and Google OAuth.}
+    \resumeItemListEnd
+
+  % ── PROJECT 2: FaceMark AI ────────────────────────────────────────────────
+  \resumeSubheading
+    {\href{https://facemark-theta.vercel.app/}{FaceMark AI -- Smart Face Recognition Attendance System} \href{https://facemark-theta.vercel.app/}{[\textcolor{blue}{Live Demo}]}}{}
+    {\textbf{Tech Stack:} HTML, CSS, JavaScript, face-api.js, MTCNN, WebRTC, Canvas API, Web Speech API, Vercel.}{}
+    \resumeItemListStart
+      \resumeItem{Built a browser-based face recognition system using face-api.js and MTCNN, capturing live video via WebRTC (getUserMedia) and generating 128-D face descriptors for real-time, low-latency identity matching entirely in-browser.}
+      \resumeItem{Implemented Canvas API overlays, a 30-sample training workflow, 30-minute duplicate-entry cooldown, and Web Speech API voice greetings. Designed a privacy-first architecture with localStorage, date filters, analytics dashboards, and CSV export.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.1in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, C/C++, HTML/CSS, JavaScript, TypeScript, SQL.} \\
+    \textbf{Frameworks}{: TensorFlow, Keras, PyTorch, Scikit-learn, Flask, React, Node.js, Hugging Face, FastAPI, Next.js.} \\
+    \textbf{Libraries \& Data}{: NumPy, Pandas, OpenCV, Matplotlib, Seaborn, Plotly, SciPy, Jupyter, MySQL, PostgreSQL, MongoDB, Redis, Supabase.} \\
+    \textbf{AI Agents \& LLM}{: LLMs, NLP, Multi-Agent Orchestration, Tool Calling, RAG, Vector Embeddings, MCP, Prompt Engineering, WebSockets, AsyncIO.} \\
+    \textbf{Tools \& Cloud}{: Git, Docker, Kubernetes, Linux, CI/CD, REST APIs, Agile, AWS (EC2, S3, Lambda), GCP, Azure, Prometheus, Grafana, Render.} \\
+  }}
+\end{itemize}
+\vspace{-25pt}
+
+%-----------PUBLICATIONS \& PATENTS-----------
+\section{Publications \& Patents}
+\resumeItemListStart
+  \resumeItem{Optimizing Energy Efficiency in Smart Street Lighting Systems with LoRa WAN Technology -- IEEE. \hfill \href{https://ieeexplore.ieee.org/document/10527564}{\textcolor{blue}{Publication}}}
+  \resumeItem{Comparative Analysis of Handwritten Digit Recognition using MLP, CNN, LeNet-5 Models -- IEEE. \hfill \href{https://ieeexplore.ieee.org/document/10939547}{\textcolor{blue}{Publication}}}
+  \resumeItem{Internet of Things (IoT) Based Attendance System for Roadside Construction Sites -- IP India Granted. \hfill \href{https://drive.google.com/file/d/1zTYg7hnRU_YZuY8qC2AFABGL-V3i2Cie/view?usp=sharing}{\textcolor{blue}{Patent}}}
+\resumeItemListEnd
+
+\end{document}
