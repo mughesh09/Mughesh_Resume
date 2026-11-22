@@ -18,6 +18,10 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 % ── Page layout ──
 \pagestyle{fancy}
@@ -47,7 +51,7 @@
     Python, FastAPI, LLM, RAG, MCP, Multi-Agent Systems,
     Machine Learning, NLP, TensorFlow, PyTorch,
     OpenAI, Anthropic, Gemini, WebSockets, PostgreSQL, MongoDB,
-    Docker, Kubernetes, Jenkins, AWS, GCP, Azure
+    Docker, Kubernetes, AWS, GCP, Azure
   }
 }
 \urlstyle{same}
@@ -90,13 +94,15 @@
 
 % ── Bullet character (plain text mode — ATS safe) ──
 \renewcommand{\labelitemi}{\textbullet}
+\renewcommand{\labelitemii}{\textbullet}
+\renewcommand{\labelitemii}{\textbullet}
 
 %-------------------------------------------
 %             CV STARTS HERE
 %-------------------------------------------
 
 \newcommand{\name}{Mughesh Kumar N R}
-\newcommand{\phone}{+1-(984)-742-8479}
+\newcommand{\phone}{+1 (984) 742-8479}
 \newcommand{\emaila}{mugheshkumar9@gmail.com}
 
 \begin{document}
@@ -104,14 +110,13 @@
 %----------HEADING-----------------
 \begin{center}
   {\LARGE \textbf{\name}} \\[4pt]
-  {\small \color{headerblue}
-    Charlottesville, VA \hspace{4pt}\textbar\hspace{4pt}
-    \href{tel:+19847428479}{\phone} \hspace{4pt}\textbar\hspace{4pt}
-    \href{mailto:\emaila}{\emaila}} \\[2pt]
-  {\small \color{headerblue}
-    \href{https://www.linkedin.com/in/mughesh/}{linkedin.com/in/mughesh} \hspace{4pt}\textbar\hspace{4pt}
-    \href{https://github.com/mughesh03}{github.com/mughesh03} \hspace{4pt}\textbar\hspace{4pt}
-    \href{https://mughesh.vercel.app/}{mughesh.vercel.app}}
+  {\footnotesize \color{headerblue}
+    Charlottesville, VA \hspace{2pt}\textbar\hspace{2pt}
+    \href{tel:+19847428479}{\phone} \hspace{2pt}\textbar\hspace{2pt}
+    \href{mailto:\emaila}{\emaila} \hspace{2pt}\textbar\hspace{2pt}
+    \href{https://www.linkedin.com/in/mughesh/}{linkedin.com/in/mughesh} \hspace{2pt}\textbar\hspace{2pt}
+    \href{https://github.com/mughesh03}{github.com/mughesh03}} \\[2pt]
+  {\footnotesize Authorized to work in the United States (F-1; OPT / STEM OPT eligible)}
 \end{center}
 \vspace{-22pt}
 
@@ -124,7 +129,7 @@
     {\href{https://www.virginia.edu/}{University of Virginia}}{Charlottesville, VA}
     {Master of Science in Computer Science}{Aug 2025 -- Dec 2026}
     \resumeItemListStart
-      \resumeItem{Completed graduate coursework in Autonomous Mobile Robots, Network Engineering, Machine Learning, and CPS.}
+      \resumeItem{Coursework: Machine Learning, Autonomous Mobile Robots, Network Engineering, Cyber-Physical Systems.}
       \resumeItem{Served as Graduate Teaching \& Research Assistant, guiding student projects and supporting professor's research.}
     \resumeItemListEnd
 
@@ -141,7 +146,7 @@
     {Bachelor of Technology in Computer Science and Engineering (AI \& ML)}{Aug 2021 -- Dec 2024}
     \resumeItemListStart
       \resumeItem{Awarded University Gold Medal for Leadership and Academic Excellence, and also served as Student Body President.}
-      \resumeItem{Won two Sustainable Development Goals hackathons and \$1,500 in awards, solving real-world problems in 48-hours.}
+      \resumeItem{Won two Sustainable Development Goals hackathons and \$1,500 in awards, solving real-world problems in 48 hours.}
       \resumeItem{Published two IEEE research papers and received an Indian-granted patent in artificial intelligence and innovation.}
     \resumeItemListEnd
 
@@ -152,8 +157,8 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {University of Virginia Information Technology Services (ITS)}{Charlottesville, VA}
-    {Wireless Systems Deployment Summer Intern}{June 2026 -- Aug 2026}
+    {UVA Information Technology Services (ITS)}{Charlottesville, VA}
+    {Wireless Systems Engineer}{Jun 2026 -- Aug 2026}
     \resumeItemListStart
       \resumeItem{Supported a \textbf{\$6M+ Wireless Network Refresh} project with \textbf{HPE} to modernize university wireless infrastructure.}
       \resumeItem{Conducted campus-wide wireless surveys and documented the geographic locations of \textbf{6,656} wireless access points.}
@@ -163,7 +168,7 @@
 
   \resumeSubheading
     {IBM}{India}
-    {Artificial Intelligence Intern}{June 2023 -- July 2023}
+    {Artificial Intelligence Engineer}{Jun 2023 -- Jul 2023}
     \resumeItemListStart
       \resumeItem{Built a Mental Fitness Tracker using \textbf{Pandas} and \textbf{NumPy}, performing analytics on merged global health datasets.}
       \resumeItem{Applied statistics and mathematics for predictive modeling of mental-health DALYs from disorder prevalence features.}
@@ -220,5 +225,6 @@
 \resumeItemListEnd
 
 \end{document}
+
 
 
